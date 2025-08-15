@@ -27,11 +27,12 @@ def replace_all(text, mapping):
 
 # 設定檔案名稱
 mapping_file = 'mapping.csv'
-input_csv = 'output_processed.csv'
-output_csv = 'changed.csv'
+input_csv = 'unexchanged.csv'
+output_csv = 'shop.csv'
 
 # 讀取對照表並處理資料
 mapping = load_mapping(mapping_file)
 apply_mapping_to_csv(input_csv, output_csv, mapping)
 
 print("✅ 替換完成！輸出檔案為：", output_csv)
+
