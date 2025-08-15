@@ -226,7 +226,7 @@ for merge_key, total_stock in merged_items.items():
 processed_results.sort(key=lambda x: (x["Land"], x["Item"], x["Enchantments"]))
 
 # --- CSV Output ---
-output_filename = "output_processed.csv"
+output_filename = "unexchanged.csv"
 try:
     with open(output_filename, "w", newline="", encoding="utf-8-sig") as csvfile: # Use utf-8-sig for Excel compatibility
         # Define field names    
@@ -242,3 +242,4 @@ except IOError:
     print(f"❌ 錯誤：無法寫入檔案 {output_filename}。請檢查權限或檔案是否被其他程式占用。")
 except Exception as e:
     print(f"❌ 處理過程中發生未預期的錯誤：{e}")
+
