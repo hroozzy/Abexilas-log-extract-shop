@@ -7,3 +7,5 @@ steps:
 3. run `main.py`
 4. run `exchanger.py` ( you can change `mapping.csv` if you want)
 5. final result is `shop.csv`
+
+> log and comment are "Traditional Chinese" good luck if you try to read it.
